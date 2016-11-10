@@ -1,0 +1,172 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% personal data
+\name{Barney}{Potter}
+%\title{Skills and Experience}                               % optional, remove / comment the line if not wanted
+\address{810 Dexter Ave N}{Seattle, WA 98109}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(208)~365~8052}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{barney.potter.24@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.barneyipotter.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{My goal is to apply my skills in computer science, mathematics, and research to a challenging position in computational biology.}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Undergraduate thesis}
+\cvitem{title}{\emph{Modeling Cell Signaling Networks with Prize-Collecting Subhypernetworks}}
+\cvitem{supervisors}{James D. Fix \& Anna M. Ritz}
+\cvitem{description}{Developed the notion of a ``hypershrub," a multi-source, multi-target generalization of a hyperpath. Created a formulation that finds specific, prize-dense hypershrubs representative of biological phenomena, which was implemented in Python. Finally, applied this formulation to the human Hedgehog signaling pathway, related to Basal Cell carcinoma, to analyze the effectiveness of the algorithm in real data.}
+
+\section{Education}
+\cventry{2012-2016}{B.A. Mathematics \& Biology}{Reed College}{Portland, OR}{}{Main subjects: Computer Science, Computational Biology, Genomics, Statistics}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+\section{Experience}
+\subsection{Research}
+\cventry{2016-Present}{Research Assistant}{Fred Hutchinson Cancer Research Center}{Seattle, WA}{}{Feature development for nextflu.org and nextstrain.org. Database management and functionality support.}
+\cventry{2015-2016}{Research Assistant}{Reed College}{Portland, OR}{}{Bioninformatic analysis of the effect of whole genome duplication on the transcriptome of \textit{Arabidopsis thaliana}. Design and development of bioinformatic pipelines. Data acquisition and analysis. Molecular biology techniques including DNA/RNA extraction, RNA-Seq (including library preparation), and RNA-FISH.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Recipient of Summer Undergraduate Research Fellowship, Reed College 2015;
+\item Presented research poster at Inland Northwest Genomics Research Symposium, University of Idaho 2015;
+\item Recieved funding to continue with post-baccalaureate research.
+\end{itemize}}
+\cventry{2014-2016}{Independent Research}{Reed College}{Portland, OR}{}{Took part in 6 week independent research projects as part of coursework. Research topics included:
+\begin{itemize}
+  \item{Impact of predator cues on tadpole development in \textit{Bombina orientalis}.}
+  \item{Optogenetics in motor neurons of \textit{Drosophila melanogaster}.}
+  \item{Selection rates in genes correlated with heavy-metal chelation.}
+\end{itemize}
+Additionally, took part in a semester-long project assessing the gene expression profile of two \textit{A. thaliana} ecotypes following synthetic whole genome duplication.
+}
+\subsection{Teaching}
+\cventry{2014-2016}{Teacher's Assistant \& Tutor}{Reed College}{Portland, OR}{Academic Support Services}{Oversaw introductory computational biology and genomics labs. Tutored undergraduates in computational biology, introductory computer science, and biology. Co-taught a cocurricular leadership course to undergraduates for the Reed Leadership Academy.}
+\cventry{2012-2016}{Lead Teacher}{Reed College}{Portland, OR}{Reed Science Outreach}{Developed and taught science curriculum to students at low-income elementary and middle schools in Portland. Acted as a mentor and role model for at-risk students. Cooridinated directly with program manager and classroom teachers to ensure the highest quality of lessons possible for students.}
+\subsection{Service}
+\cventry{2013-2014}{Servers' Assistant \& Food Quality Specialist}{Restaurants Unlimited Inc.}{Seattle, WA; Portland, OR}{Palisade \& Portland City Grill}{Responsible for timely delivery of food to restaurant guests. Ensured that food met high quality standards, prior to delivery and that used dishware was removed promptly. Facilitated communication between restaurant guests and chefs to maximize the quality of guests' dining experience.}
+
+\section{Languages}
+\cvitemwithcomment{Python}{3 years}{All thesis work, and most class work.}
+\cvitemwithcomment{HTML \& CSS}{1 year}{Personal projects.}
+\cvitemwithcomment{Scala}{1 year}{Class work.}
+\cvitemwithcomment{Java}{6 months}{Class work.}
+\cvitemwithcomment{C\#}{6 months}{Game development through Unity.}
+\cvitemwithcomment{C++}{6 months}{Personal projects.}
+
+\section{Computer skills}
+\cvitem{Operating Systems}{Windows, Mac OS X, Unix, Ubuntu}
+\cvitem{Programming}{Algorithm Design, Linear Programming, Pipeline Tuning, Shell Scripts}
+\cvitem{Web}{Git, Google Suite, Social Media, SSH}
+\cvitem{Development Platforms}{Unity, Android Studio}
+\cvitem{Other}{\LaTeX, Inkscape, CPLEX, R}
+
+\section{Interests}
+\cvitem{Birding}{Interested in the shorebirds of the Pacific Northwest.}
+\cvitem{Game Development}{Member of Portland Indie Game Squad.}
+\cvitem{Horticulture}{Making diverse garden beds of native Northwestern herbs and flowers.}
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+%
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\cvitemwithcomment{James Fix}{jimfix@reed.edu; 503-929-2732}{Thesis co-advisor and academic advisor.}
+\cvitemwithcomment{Anna Ritz}{aritz@reed.edu; 503-517-4177}{Thesis co-advisor.}
+\cvitemwithcomment{Jeremy Coate}{jcoate@reed.edu; 971-295-8785}{Research supervisor.}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+%
+\clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+\recipient{LAB NAME}{INSTITUTION\\ADDRESS LINE 1\\ADDRESS LINE 2}
+\date{DATE}
+\opening{Dear NAME,}
+\closing{Thank you,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+COVER LETTER BODY
+ADDING CHANGES FOR DEBUGGING\\
+%
+%
+% My name is Barney Potter and I am a recent graduate of Reed College in Portland, Oregon. I majored in both mathematics and biology. I have a very strong background in computational biology and computer science and a passion for designing algorithms to tackle problems in computational sciences.
+%
+% I was searching the Fred Hutch labs recently, and I noticed you as someone I should contact regarding my research interests. I find that your research interests in connecting computational methodologies with phylogenetics  and genomics is in-line with my own personal research interests.
+%
+% Personally, I am interested in building efficient algorithms and models that can help contribute to advancing biological knowledge and human health. I recently finishedwriting my senior undergraduate thesis where I built a generalization of Prize-Collecting Steiner Trees, which I used to find dysregulated pathways in cancer tissues based on differential gene expression. I have experience working in transcriptomics (studying polyploidy in Arabidopsis thaliana), computer science and computational biology, and designing and implementing algorithms for use in biological systems.
+%
+% I hope to attend graduate school, but am planning to take time off. I believe that your work would be an invaluable bridge between my interests in computational biology and that of human health during my gap years. I would appreciate the opportunity to be a contributing team member as a research associate, bringing my best efforts and unique skill set to your work.
+%
+% I know that you are very busy at this time but I would appreciate a few minutes of your time to discuss potential opportunities in the future.
+%
+
+\makeletterclosing
+%
+% %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+%
+
+%% end of file `template.tex'.
